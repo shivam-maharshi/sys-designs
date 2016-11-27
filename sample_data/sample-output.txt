@@ -1,0 +1,41 @@
+R001 A0, A1, A2, A3, A4
+R002 B0, B1
+R003 C0, C1
+R004 D0, D1
+R005 E0, E1
+R006 F0, F1, F2
+R007 G0, G1, G2, G3
+R008 H0, H1, H2
+R009 I0, I1
+R010 J0, J1
+R011 B2, B3, B4
+R012 C2
+R013 D2, D3, D4
+R014 E2, E3, E4
+R015 I2, I3, I4
+R016 J2, J3, J4
+R017 C3, C4
+R018 F3, F4, F5
+R019 H3, H4, H5, H6, H7
+R020 G4, G5
+R021 A5, A6
+R022 B5, B6
+R023 C5, C6
+R024 D5, D6, D7
+R025 E5, E6, E7
+R026 I5
+R027 J5, J6, J7, J8, J9, F6, F7, F8, F9
+R028 G6, G7
+R029 I6, I7
+R030 A7, A8
+R031 B7
+R032 C7, C8, C9
+R033 B8, B9, D8, D9
+R034 E8, E9, G8, G9
+R035 H8, H9, I8
+R036 A9
+Insufficient seats! Only 1 seats are left in Screen 1
+Insufficient seats! Only 1 seats are left in Screen 1
+Insufficient seats! Only 1 seats are left in Screen 1
+Insufficient seats! Only 1 seats are left in Screen 1
+R041 I9
