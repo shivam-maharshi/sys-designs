@@ -52,7 +52,10 @@ gradle clean build -x test
 Given below are the UML diagrams for this design.
 
 ### 3.1 Allocator
+
+```
 ![Allocator](/movie-theater/uml_diagrams/Allocator.png?raw=true "Allocator")
+```
 
 ### 3.2 Entities
 ![Entities](/movie-theater/uml_diagrams/Entities.png?raw=true "Entities")
