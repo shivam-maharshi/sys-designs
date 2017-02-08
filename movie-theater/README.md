@@ -4,7 +4,7 @@ Movie Theater Seating project solves allocates seats in a movie theater to incom
 
 For the problem specifications please refer to /sample_data/MovieTheaterSeatingHomework.pdf.
 
-## Usage
+## [Usage] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
 
 Goto the directory containing MovieTheaterSeating project and run the commands below:
 
@@ -12,7 +12,7 @@ Goto the directory containing MovieTheaterSeating project and run the commands b
 cd MovieTheaterSeating/
 ```
 
-### Run Seat Reservation Console Service
+* ### Run Seat Reservation Console Service
 
 Run these commands to generate a reservation output file for seat reservation requests passed via the input file.
 
@@ -23,7 +23,7 @@ java -cp build/libs/MovieTheaterSeating-1.0.jar com.walmart.mts.service.SeatRese
 
 ```
 
-#### Parameters
+* #### Parameters
 
 1. --input: File path for the input file holding the request identifier and seats requested data in format [RXXXX]<space>[#number].
 2. --output: File path where the reservation output is saved in format [REQ_ID]<space>[Seat Identifiers].
