@@ -1,11 +1,11 @@
 # [MovieTheaterSeating] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
 
-## 1 [Introduction] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+## [1. Introduction] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
 Movie Theater Seating project solves allocates seats in a movie theater to incoming requests in an efficient way which maximizes theater profit as well as gives closely located seats made in a single request. In the current support it is capable of taking seat reservation request input from a file and writes the seat reservation details to an output file. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
 
 For the problem specifications please refer to /sample_data/MovieTheaterSeatingHomework.pdf.
 
-## 2. [Usage] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+## [2. Usage] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
 Goto the directory containing MovieTheaterSeating project and run the commands below:
 
 ```
@@ -47,22 +47,22 @@ gradle clean build
 gradle clean build -x test
 ```
 
-## 3. [Design] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+## [3. Design] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
 
 Given below are the UML diagrams for this design.
 
 #### 3.1 Allocator
-![Allocator](/uml_diagrams/Allocator.png?raw=true "Allocator")
+![Allocator](/movie-theater/uml_diagrams/Allocator.png?raw=true "Allocator")
 
 #### 3.2 Entities
-![Entities](/uml_diagrams/Entities.png?raw=true "Entities")
+![Entities](/movie-theater/uml_diagrams/Entities.png?raw=true "Entities")
 
 #### 3.3 Request & Response
-![Request & Response](/uml_diagrams/Request%26Response.png?raw=true "Request & Response")
+![Request & Response](/movie-theater/uml_diagrams/Request%26Response.png?raw=true "Request & Response")
 
 #### 3.4 Request & Response Handler
-![Request & Response Handler](/uml_diagrams/Request%26ResponseHandler.png?raw=true "Request & Response Handler")
+![Request & Response Handler](/movie-theater/uml_diagrams/Request%26ResponseHandler.png?raw=true "Request & Response Handler")
 
 #### 3.5 Seat Reservation Service
-![Seat Reservation Service](/uml_diagrams/SeatResService.png?raw=true "Seat Reservation Service")
+![Seat Reservation Service](/movie-theater/uml_diagrams/SeatResService.png?raw=true "Seat Reservation Service")
 
