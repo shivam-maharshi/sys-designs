@@ -53,19 +53,21 @@ Given below are the UML diagrams for this design.
 
 ### 3.1 Allocator
 
-```
 ![Allocator](/movie-theater/uml_diagrams/Allocator.png?raw=true "Allocator")
-```
 
 ### 3.2 Entities
+
 ![Entities](/movie-theater/uml_diagrams/Entities.png?raw=true "Entities")
 
 ### 3.3 Request & Response
+
 ![Request & Response](/movie-theater/uml_diagrams/Request%26Response.png?raw=true "Request & Response")
 
 ### 3.4 Request & Response Handler
+
 ![Request & Response Handler](/movie-theater/uml_diagrams/Request%26ResponseHandler.png?raw=true "Request & Response Handler")
 
 ### 3.5 Seat Reservation Service
+
 ![Seat Reservation Service](/movie-theater/uml_diagrams/SeatResService.png?raw=true "Seat Reservation Service")
 
