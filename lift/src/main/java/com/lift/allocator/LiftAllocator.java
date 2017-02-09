@@ -1,26 +1,27 @@
 package com.lift.allocator;
 
-import com.lift.entities.Entity;
+import com.lift.entities.Lift;
+import com.lift.request.LiftAllocationRequest;
 
 /**
- * All classes that perform the allocation of an {@link Entity} must implement
+ * All classes that perform the allocation of an {@link Lift} must implement
  * this interface.
  * 
  * @author shivam.maharshi
  */
-public interface LiftAllocator<K, M> {
+public interface LiftAllocator<K> {
 
   /**
-   * Allocates a list of {@link Entity} from the input {@link EntityPool} &
-   * request.
+   * Allocates a {@link Lift} from the input lift pool & request.
    * 
-   * @param entityPool
-   *          - {@link EntityPool} from which a list of {@link Entity} will be
-   *          allocated.
+   * @param liftPool
+   *          - Lift pool from which a list of {@link Lift} is allocated.
    * @param request
-   *          - A request object based on which allocation will take place.
-   * @return {@link List<Entity>} - A list of allocated {@link Entity}.
+   *          - A {@link LiftAllocationRequest} object based on which allocation
+   *          for {@link Lift} will take place.
+   * @return {@link Lift} - An allocated {@link Lift} to satisfy the
+   *         {@link LiftAllocationRequest} request.
    */
-  public M allocate(K request);
+  public Lift<K> allocate(Object liftPool, LiftAllocationRequest request);
 
 }
