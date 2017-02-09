@@ -1,6 +1,6 @@
 package com.lift.service;
 
-import java.util.List;
+import com.lift.entities.Entity;
 
 /**
  * All classes that perform the allocation of an {@link Entity} must implement
@@ -8,10 +8,10 @@ import java.util.List;
  * 
  * @author shivam.maharshi
  */
-public class Service {
+public class LiftService {
 
   public static void main(String[] args) {
-	System.out.println("Hello");  
+    System.out.println("Hello");
   }
 
 }
