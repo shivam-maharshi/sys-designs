@@ -20,6 +20,7 @@ public class LiftConsoleService {
 
   private LiftAllocationRequestHandler requestHandler = new LiftAllocationRequestHandler();
   private LiftAllocationResponseHandler responseHandler = new LiftAllocationResponseHandler();
+  private LiftCentralService centralService = new LiftCentralService();
 
   public void execute(String input, String output, int floors, int lifts) {
     Lifts.setup(floors, lifts);
@@ -27,22 +28,23 @@ public class LiftConsoleService {
     List<String> out = new ArrayList<>();
     for (String s : in) {
       String[] ss = s.split(" ");
-      Integer from = null, to = null;
+      Integer start = null, end = null;
       if (ss.length == 3) {
         try {
-          from = Integer.parseInt(ss[2]);
+          start = Integer.parseInt(ss[2]);
         } catch (NumberFormatException e) {
           System.out.println("Incorrect input entry: " + s + "[NumberFormatException] " + ss[2] + " is not a number.");
         }
         try {
-          to = Integer.parseInt(ss[3]);
+          end = Integer.parseInt(ss[3]);
         } catch (NumberFormatException e) {
           System.out.println("Incorrect input entry: " + s + "[NumberFormatException] " + ss[2] + " is not a number.");
         }
         String id = ss[0];
-        if (!id.isEmpty() && from != null && to != null) {
-          LiftAllocationResponse response = requestHandler.process(new LiftAllocationRequest(id, from, to));
-          out.add(responseHandler.dispatch(response));
+        if (!id.isEmpty() && start != null && end != null) {
+          LiftAllocationResponse response = requestHandler.process(new LiftAllocationRequest(id, start, end));
+          if (centralService.serveRequest(response.getLift(), start))
+            out.add(responseHandler.dispatch(response));
         } else {
           System.out.println("Incorrect input entry: " + s + ". ReqId cannot be empty.");
         }

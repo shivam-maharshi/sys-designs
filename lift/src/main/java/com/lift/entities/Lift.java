@@ -1,16 +1,14 @@
 package com.lift.entities;
 
-import java.util.Queue;
+import java.util.List;
 
 /**
  * All {@link Lift} type of objects must implement this class to implement the
  * basic lift related functionalities.
  * 
  * @author shivam.maharshi
- *
- * @param <K>
  */
-public interface Lift<K> extends Entity<K> {
+public interface Lift extends Entity<Integer> {
 
   public boolean close();
 
@@ -19,15 +17,15 @@ public interface Lift<K> extends Entity<K> {
   public int getMinLevel();
 
   public int getMaxLevel();
-  
+
   public int getMaxWeight();
 
-  public Queue<Integer> getQueue();
+  public List<Integer> getQueue();
 
   public LiftState getState();
 
   public LiftType getType();
-  
+
   public int getWeight();
 
   public boolean isOverloaded();

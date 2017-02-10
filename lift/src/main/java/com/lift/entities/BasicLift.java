@@ -1,7 +1,7 @@
 package com.lift.entities;
 
 import java.util.LinkedList;
-import java.util.Queue;
+import java.util.List;
 
 /**
  * A {@link Lift} implementation with just the basic functionalities
@@ -9,11 +9,11 @@ import java.util.Queue;
  * 
  * @author shivam.maharshi
  */
-public class BasicLift implements Lift<Integer> {
-  
+public class BasicLift implements Lift {
+
   private int id;
   private int level;
-  private Queue<Integer> queue;
+  private List<Integer> queue;
   private LiftState state;
   private LiftType type;
   private int minLevel;
@@ -21,8 +21,7 @@ public class BasicLift implements Lift<Integer> {
   private int maxWeight;
   private int weight;
 
-  public BasicLift(int id, int level, LiftState state, LiftType type, int minLevel,
-      int maxLevel, int maxWeight) {
+  public BasicLift(int id, int level, LiftState state, LiftType type, int minLevel, int maxLevel, int maxWeight) {
     super();
     this.id = id;
     this.level = level;
@@ -52,7 +51,7 @@ public class BasicLift implements Lift<Integer> {
   }
 
   @Override
-  public Queue<Integer> getQueue() {
+  public List<Integer> getQueue() {
     return queue;
   }
 
@@ -60,7 +59,7 @@ public class BasicLift implements Lift<Integer> {
   public LiftState getState() {
     return state;
   }
-  
+
   @Override
   public LiftType getType() {
     return type;
@@ -79,7 +78,7 @@ public class BasicLift implements Lift<Integer> {
 
   @Override
   public Integer nextStop() {
-    return queue.isEmpty() ? null : queue.peek();
+    return queue.isEmpty() ? null : queue.get(0);
   }
 
   @Override

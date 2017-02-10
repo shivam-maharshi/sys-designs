@@ -7,6 +7,6 @@ package com.lift.entities;
  */
 public enum LiftState {
 
-  BROKEN, IDLE, MOVING_UP, MOVING_DOWN, WAITING;
+  BROKEN, IDLE, MOVING_UP, MOVING_DOWN;
 
 }

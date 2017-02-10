@@ -1,5 +1,6 @@
 package com.lift.response;
 
+import com.lift.entities.Lift;
 import com.lift.request.LiftAllocationRequest;
 
 /**
@@ -9,20 +10,20 @@ import com.lift.request.LiftAllocationRequest;
  */
 public class LiftAllocationResponse extends BaseResponse<String> {
 
-  private Integer liftId;
+  private Lift lift;
 
-  public LiftAllocationResponse(String id, Integer liftId) {
+  public LiftAllocationResponse(String id, Lift lift) {
     super();
     this.id = id;
-    this.liftId = liftId;
+    this.lift = lift;
   }
 
-  public Integer getLiftId() {
-    return liftId;
+  public Lift getLift() {
+    return lift;
   }
 
-  public void setLiftId(Integer liftId) {
-    this.liftId = liftId;
+  public void setLift(Lift lift) {
+    this.lift = lift;
   }
 
 }

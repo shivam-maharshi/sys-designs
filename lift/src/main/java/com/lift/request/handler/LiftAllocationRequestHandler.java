@@ -22,7 +22,7 @@ public class LiftAllocationRequestHandler extends BaseRequestHandler<LiftAllocat
    * closest in path lift algorithm for allocating lift.
    */
   public LiftAllocationResponse process(LiftAllocationRequest request) {
-    return new LiftAllocationResponse(request.getId(), liftAllocator.allocate(Lifts.lifts, request).getId());
+    return new LiftAllocationResponse(request.getId(), liftAllocator.allocate(Lifts.lifts, request));
   }
 
 }

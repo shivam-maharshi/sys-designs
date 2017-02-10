@@ -8,30 +8,30 @@ package com.lift.request;
  */
 public class LiftAllocationRequest extends BaseRequest<String> {
 
-  private int from;
-  private int to;
+  private int start;
+  private int end;
 
-  public LiftAllocationRequest(String id, int from, int to) {
+  public LiftAllocationRequest(String id, int start, int end) {
     super();
     this.id = id;
-    this.from = from;
-    this.to = to;
+    this.start = start;
+    this.end = end;
   }
 
-  public int getFrom() {
-    return from;
+  public int getStart() {
+    return start;
   }
 
-  public void setFrom(int from) {
-    this.from = from;
+  public void setStart(int start) {
+    this.start = start;
   }
 
-  public int getTo() {
-    return to;
+  public int getEnd() {
+    return end;
   }
 
-  public void setTo(int to) {
-    this.to = to;
+  public void setEnd(int end) {
+    this.end = end;
   }
 
 }

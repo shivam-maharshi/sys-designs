@@ -9,7 +9,7 @@ import com.lift.request.LiftAllocationRequest;
  * 
  * @author shivam.maharshi
  */
-public interface LiftAllocator<K> {
+public interface LiftAllocator {
 
   /**
    * Allocates a {@link Lift} from the input lift pool & request.
@@ -22,6 +22,6 @@ public interface LiftAllocator<K> {
    * @return {@link Lift} - An allocated {@link Lift} to satisfy the
    *         {@link LiftAllocationRequest} request.
    */
-  public Lift<K> allocate(Object liftPool, LiftAllocationRequest request);
+  public Lift allocate(Object liftPool, LiftAllocationRequest request);
 
 }

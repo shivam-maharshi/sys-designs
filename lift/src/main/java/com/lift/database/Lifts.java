@@ -15,7 +15,6 @@ import com.lift.entities.Lift;
  * 
  * @author shivam.maharshi
  */
-@SuppressWarnings("rawtypes")
 public class Lifts {
 
   private static int MAX_WEIGHT = 1000;

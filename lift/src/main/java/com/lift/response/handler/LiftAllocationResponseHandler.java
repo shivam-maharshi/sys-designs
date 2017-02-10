@@ -16,8 +16,8 @@ public class LiftAllocationResponseHandler extends BaseResponseHandler<String, L
    * representation in the format - [REQ_ID][space][LIFT_ID].
    */
   public String dispatch(LiftAllocationResponse response) {
-    return response.getLiftId() == null ? "All lifts are currently non functional! Please try later."
-        : response.getId() + " " + response.getLiftId();
+    return response.getLift() == null ? "All lifts are currently non functional! Please try later."
+        : response.getId() + " " + response.getLift().getId();
   }
 
 }

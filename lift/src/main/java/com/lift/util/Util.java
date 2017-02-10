@@ -20,6 +20,20 @@ import java.util.Map;
  * @author shivam.maharshi
  */
 public class Util {
+  
+  public static Integer getMin(List<Integer> list) {
+    int min = Integer.MAX_VALUE;
+    for (Integer l : list)
+      min = Math.min(min, l);
+    return min;
+  }
+  
+  public static Integer getMax(List<Integer> list) {
+    int max = Integer.MIN_VALUE;
+    for (Integer l : list)
+      max = Math.max(max, l);
+    return max;
+  }
 
   /**
    * Parses the output file with the reservation data and saves the layout of
