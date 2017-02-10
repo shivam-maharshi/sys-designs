@@ -1,53 +1,50 @@
-# [MovieTheaterSeating] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+# [Lift] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 
-## [1. Introduction] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
-Movie Theater Seating project solves allocates seats in a movie theater to incoming requests in an efficient way which maximizes theater profit as well as gives closely located seats made in a single request. In the current support it is capable of taking seat reservation request input from a file and writes the seat reservation details to an output file. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
+## [1. Introduction] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
+This project is an implementation of a Lift operating system using object oriented design principles. In the current support it is capable of taking lift floor call requests input from a file and writing the lift allocation details to an output file. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
 
-For the problem specifications please refer to /sample_data/MovieTheaterSeatingHomework.pdf.
-
-## [2. Usage] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
-Goto the directory containing MovieTheaterSeating project and run the commands below:
+## [2. Usage] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
+Goto the directory containing Lift project and run the commands below:
 
 ```
-cd MovieTheaterSeating/
+cd lift/
 ```
 
-### [2.1 Run Seat Reservation Console Service] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
-Run these commands to generate a reservation output file for seat reservation requests passed via the input file.
+### [2.1 Run Lift Console Service] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
+Run these commands to generate an allocation output file for lift allocation requests passed via the input file.
 
 ```
 gradle clean build
 
-java -cp build/libs/MovieTheaterSeating-1.0.jar com.walmart.mts.service.SeatReservationConsoleService --input=[INPUT_FILEPATH] --output=[OUTPUT_FILEPATH] --rows=[#_OF_ROWS_IN_SCREEN] --cols=[#_OF_COLUMNS_IN_SCREEN] --layout=[LAYOUT_FILEPATH | Optional]
+java -cp build/libs/oops-1.0.jar com.lift.service.LiftConsoleService --input=[INPUT_FILEPATH] --output=[OUTPUT_FILEPATH] --lifts=[#_OF_TOTAL_LIFTS] --floors=[#_OF_TOTAL_FLOORS]
 
 ```
 
 #### [2.1.1 Parameters] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
-1. --input: File path for the input file holding the request identifier and seats requested data in format [RXXXX]<space>[#number].
-2. --output: File path where the reservation output is saved in format [REQ_ID]<space>[Seat Identifiers].
-3. --rows: Number of the rows present in the theater screen. Must be a positive integer.
-4. --cols: Number of the columns present in the theater screen. Must be a positive integer.
-5. --layout: File path where the reservation screen layout representing the screen in 2D space is saved. This is an optional parameter.
+1. --input: File path for the input file holding the request identifier and floor requested data in format [REQ_ID]<space>[#interval]<space>[#start_floor]<space>[#end_floor].
+2. --output: File path where the lift allocation output is saved in format [REQ_ID]<space>[Lift Identifier].
+3. --lifts: Number of the lifts present in the given system. Must be a positive integer.
+4. --floors: Number of the floors present in the given hall. Must be a positive integer.
 
-#### [2.1.2 Sample Command] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+#### [2.1.2 Sample Command] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 
 ```
-java -cp build/libs/MovieTheaterSeating-1.0.jar com.walmart.mts.service.SeatReservationConsoleService --input=C:/Shivam/Work/WorkSpace/MovieTheaterSeating/sample_data/sample-input.txt --output=C:/Shivam/Work/WorkSpace/MovieTheaterSeating/sample_data/sample-output.txt	--rows=10 --cols=10 --layout=C:/Shivam/Work/WorkSpace/MovieTheaterSeating/sample_data/sample-layout.txt
+java -cp build/libs/oops-1.0.jar com.lift.service.LiftConsoleService --input=C:/Shivam/Work/WorkSpace/oops-design/lift/sample_data/sample-input.txt --output=C:/Shivam/Work/WorkSpace/oops-design/lift/sample_data/sample-output.txt --lifts=4 --floors=50
 ```
 
-### [2.2 Run Build] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+### [2.2 Run Build] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 
 ```
 gradle clean build
 ```
 
-### [2.3 Run Build Without Tests] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+### [2.3 Run Build Without Tests] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 
 ```
 gradle clean build -x test
 ```
 
-## [3. Design] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+## [3. Design] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 
 Given below are the UML diagrams for this design.
 
@@ -67,6 +64,6 @@ Given below are the UML diagrams for this design.
 
 ![Request & Response Handler](/movie-theater/uml_diagrams/Request%26ResponseHandler.png?raw=true "Request & Response Handler")
 
-#### [3.5 Seat Reservation Service] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
+#### [3.5 Lift Console Service] (https://github.com/shivam-maharshi/oop-designs/edit/master/movie-theater)
 
 ![Seat Reservation Service](/movie-theater/uml_diagrams/SeatResService.png?raw=true "Seat Reservation Service")
