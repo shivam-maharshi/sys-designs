@@ -1,7 +1,7 @@
 # [Lift] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 
 ## [1. Introduction] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
-This project is an implementation of a Lift operating system using object oriented design principles. In the current support it is capable of taking lift floor call requests input from a file and writing the lift allocation details to an output file. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
+Lift project is an implementation of a lift operating system that fullfils end users request by assigning a lift from a lift pool. For an efficient lift scheduling, we use in minimum in-path distance lift allocation algorithm that tries to minimze the distance of a lift car from the request origination floor. In the current support it is capable of taking lift floor call requests input from a file and writing the lift allocation details to an output file. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
 
 ## [2. Usage] (https://github.com/shivam-maharshi/oop-designs/edit/master/lift)
 Goto the directory containing Lift project and run the commands below:
