@@ -1,4 +1,5 @@
 # [System Design Approach](https://github.com/shivam-maharshi/sys-designs/edit/master/sda)
+Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Designing Big Systems!")
 
 ## [1. Introduction](https://github.com/shivam-maharshi/sys-designs/edit/master/sda)
 System design approach explains a basic appproach that should be followed while solving any architectural or system level design questions. Questions like design Monitoring or Search & Recommendation Systems and products like AWS, Netflix, Uber etc. fall into these categories. The aim here is to create an efficient yet generic enough approach that can be applied to a variety of architectural & high level design problems.
@@ -27,10 +28,10 @@ System design approach explains a basic appproach that should be followed while 
 ### [2.5. Dive Deep](https://github.com/shivam-maharshi/sys-designs/edit/master/sda) - [20 - 30 mins]
 * **2.5.1.** Application Layer - Load Balancers
 * **2.5.2.** Database Layer - SQL or NoSQL?
-    **2.5.2.** Joins Required?
-    **2.5.2.** Data Size?
-    **2.5.2.** Read Write Pattern?
-    **2.5.2.** Sharding Required?
-    **2.5.2.** Fault Tolerance?
-    **2.5.2.** Availability?
+*   **2.5.2.1** Joins Required?
+*   **2.5.2.2** Data Size?
+*   **2.5.2.3** Read Write Pattern?
+*   **2.5.2.4** Sharding Required?
+*   **2.5.2.5** Fault Tolerance?
+*   **2.5.2.6** Availability?
 * **2.5.3.** Improve Efficieny With Caching & Consistent Hashing
