@@ -6,7 +6,7 @@ System design approach explains a basic appproach that should be followed while 
 ## [2. Approach](https://github.com/shivam-maharshi/sys-designs/edit/master/sda)
 
 ### [2.1 Features](https://github.com/shivam-maharshi/sys-designs/edit/master/sda) - [2 mins]
-* 2.1.1 Scale - Data size, Message size, User numbers
+* **2.1.1 Scale** - Data size, Message size, User numbers
 * 2.1.2 Main Features
 
 ### [2.2 Estimations](https://github.com/shivam-maharshi/sys-designs/edit/master/sda) - [5 mins]
