@@ -67,6 +67,6 @@ Given below are the UML diagrams for this design.
 
 ![Request & Response Handler](/movie-theater/uml_diagrams/Request%26ResponseHandler.png?raw=true "Request & Response Handler")
 
-#### [3.5 Seat Reservation Service] (https://github.com/shivam-maharshi/sys-designs/edit/master/movie-theater)
+#### [3.5 Seat Reservation Service](https://github.com/shivam-maharshi/sys-designs/edit/master/movie-theater)
 
 ![Seat Reservation Service](/movie-theater/uml_diagrams/SeatResService.png?raw=true "Seat Reservation Service")
