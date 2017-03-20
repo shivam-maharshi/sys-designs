@@ -1,4 +1,4 @@
-# [Lift] (https://github.com/shivam-maharshi/sys-designs/edit/master/lift)
+# [Lift](https://github.com/shivam-maharshi/sys-designs/edit/master/lift)
 
 ## [1. Introduction](https://github.com/shivam-maharshi/sys-designs/edit/master/lift)
 Lift project is an implementation of a lift operating system that fullfils end users request by assigning a lift from a lift pool. For an efficient lift scheduling, we use in minimum in-path distance lift allocation algorithm that tries to minimze the distance of a lift car from the request origination floor. In the current support it is capable of taking lift floor call requests input from a file and writing the lift allocation details to an output file. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
