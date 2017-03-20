@@ -27,10 +27,10 @@ System design approach explains a basic appproach that should be followed while 
 ### [2.5. Dive Deep](https://github.com/shivam-maharshi/sys-designs/edit/master/sda) - [20 - 30 mins]
 * **2.5.1.** Application Layer - Load Balancers
 * **2.5.2.** Database Layer - SQL or NoSQL?
-*     Joins Required?
-*     Data Size?
-*     Read Write Pattern?
-*     Sharding Required?
-*     Fault Tolerance?
-*     Availability?
+    **2.5.2.** Joins Required?
+    **2.5.2.** Data Size?
+    **2.5.2.** Read Write Pattern?
+    **2.5.2.** Sharding Required?
+    **2.5.2.** Fault Tolerance?
+    **2.5.2.** Availability?
 * **2.5.3.** Improve Efficieny With Caching & Consistent Hashing
