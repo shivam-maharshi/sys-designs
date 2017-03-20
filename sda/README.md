@@ -1,8 +1,8 @@
-# [System Design Approach](https://github.com/shivam-maharshi/oop-designs/edit/master/sda)
+# [System Design Approach](https://github.com/shivam-maharshi/sys-designs/edit/master/sda)
 
 System design approach explains a basic appproach that should be followed while solving any architectural or system level design questions. Questions like design Monitoring or Search & Recommendation Systems and products like AWS, Netflix, Uber etc. fall into these categories. The aim here is to create an efficient yet generic enough approach that can be applied to a variety of architectural & high level design problems.
 
-## [Approach](https://github.com/shivam-maharshi/oop-designs/edit/master/sda)
+## [Approach](https://github.com/shivam-maharshi/sys-designs/edit/master/sda)
 
 ### 1. Features - [2 mins]
 * 1.1 Scale - Data size, Message size, User numbers
